@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: b905c410bc55ef544b4e3abc1a3f80c9
+timeCreated: 1504170976
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 99247
+  packageName: Untitled
+  packageVersion: 1.0
+  assetPath: Assets/Stone_textures/Materials/ground3_2.mat
+  uploadId: 198833

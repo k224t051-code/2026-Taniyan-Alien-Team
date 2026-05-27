@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 509ec58239d4cda4d802ba5a9176c044
+timeCreated: 1504170882
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 99247
+  packageName: Untitled
+  packageVersion: 1.0
+  assetPath: Assets/Stone_textures/Materials/Ground1_Cool1.mat
+  uploadId: 198833
