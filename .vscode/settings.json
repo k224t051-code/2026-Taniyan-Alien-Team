@@ -66,5 +66,5 @@
     "explorer.fileNesting.patterns": {
         "*.sln": "*.csproj"
     },
-    "dotnet.defaultSolution": "alien.slnx"
+    "dotnet.defaultSolution": "2026-Taniyan-Alien-Team.slnx"
 }

@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 3
   tags:
   - Pot
+  - ThrowingItem
   layers:
   - Default
   - TransparentFX

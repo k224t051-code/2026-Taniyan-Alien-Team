@@ -1,46 +1,78 @@
 using UnityEngine;
+using TMPro;           // TextMeshProを操作するために追加
+using System.Collections; // 時間待ち（コルーチン）を使うために追加
 
 public class NPCReaction : MonoBehaviour
 {
-    // リアクションの閾値（どれくらいの勢いで当たったら「強い」と判定するか）
     [SerializeField] private float heavyImpactThreshold = 2.0f;
 
-    // 物理的な衝突が発生した瞬間に呼ばれる関数
+    [Header("オーディオ設定")]
+    [SerializeField] private AudioSource audioSource;
+    [SerializeField] private AudioClip heavySound;
+    [SerializeField] private AudioClip lightSound;
+
+    [Header("吹き出し設定")]
+    [SerializeField] private GameObject speechBubble; // Canvasをここに入れる
+    [SerializeField] private TextMeshProUGUI speechText;  // TextMeshProをここに入れる
+
+    private void Start()
+    {
+        // ゲーム開始時は吹き出しを非表示（オフ）にしておく
+        if (speechBubble != null)
+        {
+            speechBubble.SetActive(false);
+        }
+    }
+
     private void OnCollisionEnter(Collision collision)
     {
-        // 1. ぶつかってきた相手が「投げるアイテム」かどうかをタグで判定
         if (collision.gameObject.CompareTag("ThrowingItem"))
         {
-            // 2. 衝突の勢い（相対速度の大きさ）を取得
             float impactSpeed = collision.relativeVelocity.magnitude;
 
-            // 3. 勢いに応じてリアクションを分岐
             if (impactSpeed >= heavyImpactThreshold)
             {
-                // 勢いが強い場合（ダメージ、怒るなど）
-                PlayHeavyReaction();
+                // 強い時：強い音、痛そうなテキスト、2秒間表示
+                PlayReaction(heavySound, "痛っ！！！", 2.0f);
             }
             else
             {
-                // 勢いが弱い場合（気づく、軽く振り返るなど）
-                PlayLightReaction();
+                // 弱い時：弱い音、ちょっとしたテキスト、1.5秒間表示
+                PlayReaction(lightSound, "いてっ", 1.5f);
             }
         }
     }
 
-    // 強いリアクションの処理
-    private void PlayHeavyReaction()
+    // 音と吹き出しをセットで再生する関数
+    private void PlayReaction(AudioClip sound, string message, float displayTime)
     {
-        Debug.Log("【強】痛い！オブジェクトが強く衝突しました。");
-        
-        // ここに実際のアニメーション再生やパーティクル生成の処理を書く
+        // 音を鳴らす
+        if (audioSource != null && sound != null) audioSource.PlayOneShot(sound);
+
+        if (speechBubble != null && speechText != null)
+        {
+            // 連続で当たった時のために、一旦古い「消すタイマー」を止める
+            StopAllCoroutines();
+
+            // テキストを書き換えて、吹き出しを表示
+            speechText.text = message;
+            speechBubble.SetActive(true);
+
+            // 指定時間後に吹き出しを消すタイマーをスタート
+            StartCoroutine(HideBubbleAfterDelay(displayTime));
+        }
     }
 
-    // 弱いリアクションの処理
-    private void PlayLightReaction()
+    // 一定時間待ってから吹き出しを消す処理（コルーチン）
+    private IEnumerator HideBubbleAfterDelay(float delay)
     {
-        Debug.Log("【弱】コツン。オブジェクトが軽く触れました。");
+        // delay秒だけ待機
+        yield return new WaitForSeconds(delay);
         
-        // 同じく、ここに実際のアニメーション再生やパーティクル生成の処理を書く
+        // 吹き出しを非表示にする
+        if (speechBubble != null)
+        {
+            speechBubble.SetActive(false);
+        }
     }
 }
