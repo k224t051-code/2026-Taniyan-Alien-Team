@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 3
   tags:
   - Pot
+  - Area detection
   layers:
   - Default
   - TransparentFX

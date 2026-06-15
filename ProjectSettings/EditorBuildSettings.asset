@@ -8,6 +8,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Ozaki/Ozaki.unity
+    guid: a857d5bc38b2e45459286034fe8bc06e
+  - enabled: 1
+    path: Assets/Ozaki/Ozaki 1.unity
+    guid: ccf8193fa8b5b4e5cb933318952a8d26
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 289c1b55c9541489481df5cc06664110, type: 3}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: a0d420a8fea714f9c8e1159085c74f7f, type: 2}
