@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Pot
   - Area detection
+  - ThrowingItem
   layers:
   - Default
   - TransparentFX
