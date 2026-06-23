@@ -1,6 +1,6 @@
 using UnityEngine;
-using TMPro;           // TextMeshProを操作するために追加
-using System.Collections; // 時間待ち（コルーチン）を使うために追加
+using UnityEngine.UI;       // UIコンポーネントの操作に必要
+using System.Collections;
 
 public class NPCReaction : MonoBehaviour
 {
@@ -11,13 +11,17 @@ public class NPCReaction : MonoBehaviour
     [SerializeField] private AudioClip heavySound;
     [SerializeField] private AudioClip lightSound;
 
-    [Header("吹き出し設定")]
-    [SerializeField] private GameObject speechBubble; // Canvasをここに入れる
-    [SerializeField] private TextMeshProUGUI speechText;  // TextMeshProをここに入れる
+    [Header("表示設定")]
+    [SerializeField] private GameObject speechBubble; // 吹き出しのCanvas等の親オブジェクト
+    [SerializeField] private Image reactionImage;     // ヒエラルキー上のUI Imageコンポーネント
+    
+    [Header("切り替える画像データ（※Texture TypeをSpriteにしてください）")]
+    [SerializeField] private Sprite heavySprite;      // 強い衝撃時の画像ファイル
+    [SerializeField] private Sprite lightSprite;      // 弱い衝撃時の画像ファイル
 
     private void Start()
     {
-        // ゲーム開始時は吹き出しを非表示（オフ）にしておく
+        // ゲーム開始時は吹き出しを非表示にしておく
         if (speechBubble != null)
         {
             speechBubble.SetActive(false);
@@ -32,44 +36,38 @@ public class NPCReaction : MonoBehaviour
 
             if (impactSpeed >= heavyImpactThreshold)
             {
-                // 強い時：強い音、痛そうなテキスト、2秒間表示
-                PlayReaction(heavySound, "痛っ！！！", 2.0f);
+                PlayReaction(heavySound, heavySprite, 2.0f);
             }
             else
             {
-                // 弱い時：弱い音、ちょっとしたテキスト、1.5秒間表示
-                PlayReaction(lightSound, "いてっ", 1.5f);
+                PlayReaction(lightSound, lightSprite, 1.5f);
             }
         }
     }
 
-    // 音と吹き出しをセットで再生する関数
-    private void PlayReaction(AudioClip sound, string message, float displayTime)
+    private void PlayReaction(AudioClip sound, Sprite sprite, float displayTime)
     {
-        // 音を鳴らす
-        if (audioSource != null && sound != null) audioSource.PlayOneShot(sound);
-
-        if (speechBubble != null && speechText != null)
+        if (audioSource != null && sound != null)
         {
-            // 連続で当たった時のために、一旦古い「消すタイマー」を止める
+            audioSource.PlayOneShot(sound);
+        }
+
+        if (speechBubble != null && reactionImage != null && sprite != null)
+        {
             StopAllCoroutines();
 
-            // テキストを書き換えて、吹き出しを表示
-            speechText.text = message;
+            // 画像の差し替え処理
+            reactionImage.sprite = sprite;
             speechBubble.SetActive(true);
 
-            // 指定時間後に吹き出しを消すタイマーをスタート
             StartCoroutine(HideBubbleAfterDelay(displayTime));
         }
     }
 
-    // 一定時間待ってから吹き出しを消す処理（コルーチン）
     private IEnumerator HideBubbleAfterDelay(float delay)
     {
-        // delay秒だけ待機
         yield return new WaitForSeconds(delay);
-        
-        // 吹き出しを非表示にする
+
         if (speechBubble != null)
         {
             speechBubble.SetActive(false);
