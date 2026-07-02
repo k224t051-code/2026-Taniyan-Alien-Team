@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: df577f9239cefa2408cfc99b7a908c2c
+timeCreated: 1504170893
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 99247
+  packageName: Untitled
+  packageVersion: 1.0
+  assetPath: Assets/Stone_textures/Materials/Ground1_Cool3_offset2.mat
+  uploadId: 198833

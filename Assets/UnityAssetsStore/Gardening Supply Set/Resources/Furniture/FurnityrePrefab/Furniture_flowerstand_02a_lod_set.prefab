@@ -1,0 +1,204 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &933183163006411969
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4481869342265251134}
+  - component: {fileID: 3288521642398727451}
+  m_Layer: 0
+  m_Name: Furniture_flowerstand_02a_lod_set
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4481869342265251134
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 933183163006411969}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 4916608894589745789}
+  - {fileID: 8533459780303706606}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!205 &3288521642398727451
+LODGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 933183163006411969}
+  serializedVersion: 2
+  m_LocalReferencePoint: {x: 0, y: 0.8273329, z: 0.049831778}
+  m_Size: 1.6546658
+  m_FadeMode: 0
+  m_AnimateCrossFading: 0
+  m_LastLODIsBillboard: 0
+  m_LODs:
+  - screenRelativeHeight: 0.4874628
+    fadeTransitionWidth: 0
+    renderers:
+    - renderer: {fileID: 4580312465633378454}
+    - renderer: {fileID: 2532844151348981870}
+  - screenRelativeHeight: 0.048274245
+    fadeTransitionWidth: 0
+    renderers:
+    - renderer: {fileID: 6847013529544430737}
+    - renderer: {fileID: 2380668322800962134}
+  m_Enabled: 1
+--- !u!1001 &4877948981104172438
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 4481869342265251134}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: b3847cafbd8103147b931c26881eb025, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: b3847cafbd8103147b931c26881eb025, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: b3847cafbd8103147b931c26881eb025, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: b3847cafbd8103147b931c26881eb025, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: b3847cafbd8103147b931c26881eb025, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: b3847cafbd8103147b931c26881eb025, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: b3847cafbd8103147b931c26881eb025, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: b3847cafbd8103147b931c26881eb025, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: b3847cafbd8103147b931c26881eb025, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: b3847cafbd8103147b931c26881eb025, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: b3847cafbd8103147b931c26881eb025, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b3847cafbd8103147b931c26881eb025, type: 3}
+      propertyPath: m_Name
+      value: Furniture_flowerstand_02a_LOD0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b3847cafbd8103147b931c26881eb025, type: 3}
+--- !u!4 &4916608894589745789 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: b3847cafbd8103147b931c26881eb025, type: 3}
+  m_PrefabInstance: {fileID: 4877948981104172438}
+  m_PrefabAsset: {fileID: 0}
+--- !u!23 &4580312465633378454 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: -278804076245918464, guid: b3847cafbd8103147b931c26881eb025, type: 3}
+  m_PrefabInstance: {fileID: 4877948981104172438}
+  m_PrefabAsset: {fileID: 0}
+--- !u!23 &2532844151348981870 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 6960186329085095416, guid: b3847cafbd8103147b931c26881eb025, type: 3}
+  m_PrefabInstance: {fileID: 4877948981104172438}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &8207327670722674181
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 4481869342265251134}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 937a975fe78ad4f47929ce6b30cd1665, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 937a975fe78ad4f47929ce6b30cd1665, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 937a975fe78ad4f47929ce6b30cd1665, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 937a975fe78ad4f47929ce6b30cd1665, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 937a975fe78ad4f47929ce6b30cd1665, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 937a975fe78ad4f47929ce6b30cd1665, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 937a975fe78ad4f47929ce6b30cd1665, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 937a975fe78ad4f47929ce6b30cd1665, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 937a975fe78ad4f47929ce6b30cd1665, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 937a975fe78ad4f47929ce6b30cd1665, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 937a975fe78ad4f47929ce6b30cd1665, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 937a975fe78ad4f47929ce6b30cd1665, type: 3}
+      propertyPath: m_Name
+      value: Furniture_flowerstand_02a_LOD1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 937a975fe78ad4f47929ce6b30cd1665, type: 3}
+--- !u!4 &8533459780303706606 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 937a975fe78ad4f47929ce6b30cd1665, type: 3}
+  m_PrefabInstance: {fileID: 8207327670722674181}
+  m_PrefabAsset: {fileID: 0}
+--- !u!23 &6847013529544430737 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: -5844771200237917548, guid: 937a975fe78ad4f47929ce6b30cd1665, type: 3}
+  m_PrefabInstance: {fileID: 8207327670722674181}
+  m_PrefabAsset: {fileID: 0}
+--- !u!23 &2380668322800962134 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 5832051779624973395, guid: 937a975fe78ad4f47929ce6b30cd1665, type: 3}
+  m_PrefabInstance: {fileID: 8207327670722674181}
+  m_PrefabAsset: {fileID: 0}
