@@ -7,6 +7,12 @@ TagManager:
   - Pot
   - Area detection
   - ThrowingItem
+  - Neji_minus_red
+  - Neji_minus_blue
+  - Neji_plus_blue
+  - Neji_rokkaku_yellow
+  - Neji_rokkaku_red
+  - Neji_rokkaku_blue
   layers:
   - Default
   - TransparentFX

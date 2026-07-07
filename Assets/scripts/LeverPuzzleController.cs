@@ -12,27 +12,33 @@ public class LeverPuzzleController : MonoBehaviour
     {
         if (cleared)
         {
+            Debug.Log("LeverPuzzleController: already cleared.");
             return false;
         }
 
         if (area == null)
         {
+            Debug.LogError("LeverPuzzleController: DetectArea is not assigned.");
             return false;
         }
 
-        if (!area.IsCorrect(correctAnswers))
+        bool isCorrect = area.IsCorrect(correctAnswers);
+        Debug.Log($"LeverPuzzleController: IsCorrect={isCorrect}, correctAnswers={correctAnswers?.Length ?? 0}, insideObjects={area.insideObjects?.Count ?? 0}");
+
+        if (!isCorrect)
         {
             return false;
         }
 
         if (clearSequence == null)
         {
-            Debug.LogWarning("Clear sequence is not set.");
+            Debug.LogError("LeverPuzzleController: Clear sequence is not assigned.");
             return false;
         }
 
         cleared = true;
         clearSequence.StartClear();
+        Debug.Log("LeverPuzzleController: clear sequence started.");
         return true;
     }
 }
