@@ -58,9 +58,16 @@ public class LeverCheck : MonoBehaviour
     {
         if (puzzleController == null)
         {
-            return;
+            puzzleController = FindObjectOfType<LeverPuzzleController>();
+
+            if (puzzleController == null)
+            {
+                Debug.LogError("LeverCheck: puzzleController is not assigned and could not be found automatically.");
+                return;
+            }
         }
 
+        Debug.Log($"LeverCheck: calling TryClear on {puzzleController.name}");
         puzzleController.TryClear();
     }
 }
