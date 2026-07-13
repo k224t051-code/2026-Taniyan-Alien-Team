@@ -1,6 +1,7 @@
 {
   "dependencies": {
     "com.meta.xr.sdk.all": "78.0.0",
+    "com.unity.2d.sprite": "1.0.0",
     "com.unity.cloud.gltfast": "6.14.1",
     "com.unity.collab-proxy": "2.10.2",
     "com.unity.feature.development": "1.0.2",
