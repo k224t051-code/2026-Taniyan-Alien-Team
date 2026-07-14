@@ -1,6 +1,6 @@
 using UnityEngine;
-using UnityEngine.UI;
 using System.Collections;
+using TMPro; // TextMeshProを扱うために必要
 
 // 特定のタグに対するリアクション設定
 [System.Serializable]
@@ -14,14 +14,16 @@ public class TagReactionSetting
     public float heavyThreshold = 2.0f;
     [Tooltip("強い時の音声")]
     public AudioClip heavySound;
-    [Tooltip("強い時の画像")]
-    public Sprite heavySprite;
+    [Tooltip("強い時のテキスト（宇宙語になる平仮名）")]
+    [TextArea(1, 3)] // インスペクターで入力枠を広げる
+    public string heavyText;
     
     [Header("弱い衝撃用")]
     [Tooltip("弱い時の音声")]
     public AudioClip lightSound;
-    [Tooltip("弱い時の画像")]
-    public Sprite lightSprite;
+    [Tooltip("弱い時のテキスト（宇宙語になる平仮名）")]
+    [TextArea(1, 3)]
+    public string lightText;
 
     [Header("表示時間")]
     [Tooltip("吹き出しの表示時間")]
@@ -30,26 +32,34 @@ public class TagReactionSetting
 
 public class NPCReaction : MonoBehaviour
 {
+    [Header("アニメーション設定")]
+    [SerializeField] private Animator animator;
+    [Tooltip("強い衝撃時に再生するAnimatorのTriggerパラメータ名")]
+    [SerializeField] private string heavyAnimTrigger = "HeavyHit";
+    [Tooltip("弱い衝撃時に再生するAnimatorのTriggerパラメータ名")]
+    [SerializeField] private string lightAnimTrigger = "LightHit";
+
+    [Space(10)]
     [Header("特定のタグに対するリアクション設定")]
-    [Tooltip("ここで設定したタグが当たった時、専用のリアクションを返します")]
     [SerializeField] private TagReactionSetting[] specificTagReactions;
 
     [Space(10)]
     [Header("通常の投擲物(ThrowingItem)の強弱設定")]
     [SerializeField] private float heavyImpactThreshold = 2.0f;
     [SerializeField] private AudioClip heavySound;
+    [TextArea(1, 3)]
+    [SerializeField] private string defaultHeavyText;
     [SerializeField] private AudioClip lightSound;
-    [SerializeField] private Sprite heavySprite;
-    [SerializeField] private Sprite lightSprite;
+    [TextArea(1, 3)]
+    [SerializeField] private string defaultLightText;
 
-    [Header("表示時間")]
+    [Header("表示設定")]
     [SerializeField] private AudioSource audioSource;
     [SerializeField] private GameObject speechBubble; 
-    [SerializeField] private Image reactionImage;     
+    [SerializeField] private TextMeshProUGUI reactionText; // ImageからTMPへ変更
 
     private void Start()
     {
-        // ゲーム開始時は吹き出しを非表示にしておく
         if (speechBubble != null)
         {
             speechBubble.SetActive(false);
@@ -60,22 +70,23 @@ public class NPCReaction : MonoBehaviour
     {
         string hitTag = collision.gameObject.tag;
         float impactSpeed = collision.relativeVelocity.magnitude;
+        
+        bool isHeavy = false;
 
         // 1. まず、特定タグのリスト（ネジなど）に一致するかチェックする
         foreach (var reaction in specificTagReactions)
         {
             if (hitTag == reaction.targetTag)
             {
-                // 一致するタグが見つかったら、強弱を判定する
-                if (impactSpeed >= reaction.heavyThreshold)
+                isHeavy = impactSpeed >= reaction.heavyThreshold;
+                
+                if (isHeavy)
                 {
-                    // 強い時のリアクション
-                    PlayReaction(reaction.heavySound, reaction.heavySprite, reaction.displayTime);
+                    PlayReaction(reaction.heavySound, reaction.heavyText, reaction.displayTime, true);
                 }
                 else
                 {
-                    // 弱い時のリアクション
-                    PlayReaction(reaction.lightSound, reaction.lightSprite, reaction.displayTime);
+                    PlayReaction(reaction.lightSound, reaction.lightText, reaction.displayTime, false);
                 }
                 return; // 処理を終了
             }
@@ -84,19 +95,21 @@ public class NPCReaction : MonoBehaviour
         // 2. 特定タグに当てはまらず、"ThrowingItem" だった場合は従来の強弱判定を行う
         if (hitTag == "ThrowingItem")
         {
-            if (impactSpeed >= heavyImpactThreshold)
+            isHeavy = impactSpeed >= heavyImpactThreshold;
+            
+            if (isHeavy)
             {
-                PlayReaction(heavySound, heavySprite, 2.0f);
+                PlayReaction(heavySound, defaultHeavyText, 2.0f, true);
             }
             else
             {
-                PlayReaction(lightSound, lightSprite, 1.5f);
+                PlayReaction(lightSound, defaultLightText, 1.5f, false);
             }
         }
     }
 
-    // 音と画像表示をセットで再生する関数
-    private void PlayReaction(AudioClip sound, Sprite sprite, float displayTime)
+    // 音、テキスト、アニメーションをセットで再生する関数
+    private void PlayReaction(AudioClip sound, string text, float displayTime, bool isHeavy)
     {
         // 音を鳴らす
         if (audioSource != null && sound != null)
@@ -104,22 +117,32 @@ public class NPCReaction : MonoBehaviour
             audioSource.PlayOneShot(sound);
         }
 
-        // 吹き出しと画像の処理
-        if (speechBubble != null && reactionImage != null && sprite != null)
+        // アニメーションの再生（タグの有無に関係なく、強弱のみで判定）
+        if (animator != null)
         {
-            // 連続で当たった時のために、一旦古いタイマーを止める
+            if (isHeavy)
+            {
+                animator.SetTrigger(heavyAnimTrigger);
+            }
+            else
+            {
+                animator.SetTrigger(lightAnimTrigger);
+            }
+        }
+
+        // 吹き出しとテキストの処理
+        if (speechBubble != null && reactionText != null && !string.IsNullOrEmpty(text))
+        {
             StopAllCoroutines();
 
-            // 画像の差し替え処理
-            reactionImage.sprite = sprite;
+            // テキストの差し替え処理
+            reactionText.text = text;
             speechBubble.SetActive(true);
 
-            // 指定時間後に消すタイマーをスタート
             StartCoroutine(HideBubbleAfterDelay(displayTime));
         }
     }
 
-    // 一定時間待ってから吹き出しを消す処理（コルーチン）
     private IEnumerator HideBubbleAfterDelay(float delay)
     {
         yield return new WaitForSeconds(delay);
