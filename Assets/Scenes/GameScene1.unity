@@ -4129,7 +4129,7 @@ RectTransform:
   m_LocalScale: {x: 3, y: 3, z: 3}
   m_ConstrainProportionsScale: 1
   m_Children: []
-  m_Father: {fileID: 345246761}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -9293,7 +9293,19 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 13c96c9615f4c44ebbd69aec67eb50f6, type: 3}
       insertIndex: -1
       addedObject: {fileID: 643596627}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8164078558771037576, guid: 13c96c9615f4c44ebbd69aec67eb50f6, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 204027082}
+    - targetCorrespondingSourceObject: {fileID: 8164078558771037576, guid: 13c96c9615f4c44ebbd69aec67eb50f6, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 204027081}
+    - targetCorrespondingSourceObject: {fileID: 8164078558771037576, guid: 13c96c9615f4c44ebbd69aec67eb50f6, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 204027086}
+    - targetCorrespondingSourceObject: {fileID: 8164078558771037576, guid: 13c96c9615f4c44ebbd69aec67eb50f6, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 204027080}
   m_SourcePrefab: {fileID: 100100000, guid: 13c96c9615f4c44ebbd69aec67eb50f6, type: 3}
 --- !u!1 &474272443
 GameObject:
@@ -12224,15 +12236,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 1f7d024708d5c4874aa03e6972f9c65e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.419
+      value: -0.603
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 1f7d024708d5c4874aa03e6972f9c65e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.31
+      value: 0.179
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 1f7d024708d5c4874aa03e6972f9c65e, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.691
+      value: -0.775
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 1f7d024708d5c4874aa03e6972f9c65e, type: 3}
       propertyPath: m_LocalRotation.w
@@ -12402,57 +12414,60 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42a87d0d70cca4ef4a7cba082d0b9e06, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animator: {fileID: 0}
+  heavyAnimTrigger: HeavyHit
+  lightAnimTrigger: LightHit
   specificTagReactions:
   - targetTag: 
     heavyThreshold: 2
     heavySound: {fileID: 0}
-    heavySprite: {fileID: 0}
+    heavyText: 
     lightSound: {fileID: 0}
-    lightSprite: {fileID: 0}
+    lightText: 
     displayTime: 0
   - targetTag: 
     heavyThreshold: 2
     heavySound: {fileID: 0}
-    heavySprite: {fileID: 0}
+    heavyText: 
     lightSound: {fileID: 0}
-    lightSprite: {fileID: 0}
+    lightText: 
     displayTime: 0
   - targetTag: 
     heavyThreshold: 2
     heavySound: {fileID: 0}
-    heavySprite: {fileID: 0}
+    heavyText: 
     lightSound: {fileID: 0}
-    lightSprite: {fileID: 0}
+    lightText: 
     displayTime: 0
   - targetTag: 
     heavyThreshold: 2
     heavySound: {fileID: 0}
-    heavySprite: {fileID: 0}
+    heavyText: 
     lightSound: {fileID: 0}
-    lightSprite: {fileID: 0}
+    lightText: 
     displayTime: 0
   - targetTag: 
     heavyThreshold: 2
     heavySound: {fileID: 0}
-    heavySprite: {fileID: 0}
+    heavyText: 
     lightSound: {fileID: 0}
-    lightSprite: {fileID: 0}
+    lightText: 
     displayTime: 0
   - targetTag: 
     heavyThreshold: 2
     heavySound: {fileID: 0}
-    heavySprite: {fileID: 0}
+    heavyText: 
     lightSound: {fileID: 0}
-    lightSprite: {fileID: 0}
+    lightText: 
     displayTime: 0
   heavyImpactThreshold: 2
   heavySound: {fileID: 8300000, guid: e21f50827c0134e1f96ecaac97b5a66a, type: 3}
+  defaultHeavyText: 
   lightSound: {fileID: 8300000, guid: a79fd384e216347c1817f7f93899a967, type: 3}
-  heavySprite: {fileID: 21300000, guid: 06bd9939c8312477d9909d2b9a63bb36, type: 3}
-  lightSprite: {fileID: 21300000, guid: 37fe9abc70cbb4bcbb3e26cd8ef06c39, type: 3}
+  defaultLightText: 
   audioSource: {fileID: 0}
   speechBubble: {fileID: 106749381}
-  reactionImage: {fileID: 1114040581}
+  reactionText: {fileID: 0}
 --- !u!65 &643596631
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -35685,3 +35700,4 @@ SceneRoots:
   - {fileID: 1587759274}
   - {fileID: 1640032310}
   - {fileID: 2024052530}
+  - {fileID: 201839970}
