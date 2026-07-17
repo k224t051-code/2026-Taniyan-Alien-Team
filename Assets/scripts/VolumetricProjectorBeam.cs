@@ -71,16 +71,17 @@ public class VolumetricProjectorBeam : MonoBehaviour
         // 1. キャンバスの現在のワールド空間における4隅の座標を取得
         targetCanvas.GetWorldCorners(worldCorners);
 
-        // 2. レンズの向き（Up, Right）に基づいて、レンズ側の矩形4隅を計算
+        // 2. ★修正箇所：キャンバスの向き（Up, Right）を基準にして、レンズ側の矩形4隅を計算
+        // （プロジェクターの向きに依存すると交差・ねじれが発生するため、キャンバスの向きに合わせます）
         Vector3 lensCenter = projectorLens.position;
-        Vector3 upOffset = projectorLens.up * (lensSize * 0.5f);
-        Vector3 rightOffset = projectorLens.right * (lensSize * 0.5f);
+        Vector3 upOffset = targetCanvas.up * (lensSize * 0.5f);
+        Vector3 rightOffset = targetCanvas.right * (lensSize * 0.5f);
 
         Vector3[] lensCorners = new Vector3[4];
-        lensCorners[0] = lensCenter - rightOffset - upOffset; // 左下
-        lensCorners[1] = lensCenter - rightOffset + upOffset; // 左上
-        lensCorners[2] = lensCenter + rightOffset + upOffset; // 右上
-        lensCorners[3] = lensCenter + rightOffset - upOffset; // 右下
+        lensCorners[0] = lensCenter - rightOffset - upOffset; // 0: キャンバスの左下と完全に一致
+        lensCorners[1] = lensCenter - rightOffset + upOffset; // 1: キャンバスの左上と完全に一致
+        lensCorners[2] = lensCenter + rightOffset + upOffset; // 2: キャンバスの右上と完全に一致
+        lensCorners[3] = lensCenter + rightOffset - upOffset; // 3: キャンバスの右下と完全に一致
 
         // 3. すべての座標をこのスクリプトがついているオブジェクトのローカル座標に変換して格納
         for (int i = 0; i < 4; i++)
