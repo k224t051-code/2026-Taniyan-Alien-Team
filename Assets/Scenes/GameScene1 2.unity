@@ -11535,7 +11535,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6864834979053538139, guid: 04177656a21f64efcbc1ec9f9ed31b66, type: 3}
       propertyPath: nextSceneName
-      value: LastScene
+      value: GameScene2
       objectReference: {fileID: 0}
     - target: {fileID: 8916066713595185472, guid: 04177656a21f64efcbc1ec9f9ed31b66, type: 3}
       propertyPath: area
@@ -12552,59 +12552,59 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 643596633}
-  heavyAnimTrigger: Reaction
-  lightAnimTrigger: Reaction
+  heavyAnimTrigger: HeavyHit
+  lightAnimTrigger: LightHit
   specificTagReactions:
   - targetTag: Neji_minus_blue
     heavyThreshold: 2
     heavySound: {fileID: 0}
-    heavySprite: {fileID: 0}
+    heavyText: "\u3044\u305F\u3044"
     lightSound: {fileID: 0}
-    lightSprite: {fileID: 0}
+    lightText: "\u3042\u304A\u3044\u307E\u3044\u306A\u3059\u306E\u306D\u3058"
     displayTime: 3
   - targetTag: Neji_minus _red
     heavyThreshold: 2
     heavySound: {fileID: 0}
-    heavySprite: {fileID: 0}
+    heavyText: "\u3044\u305F\u3044"
     lightSound: {fileID: 0}
-    lightSprite: {fileID: 0}
+    lightText: "\u3042\u304B\u3044\u307E\u3044\u306A\u3059\u306E\u306D\u3058"
     displayTime: 3
   - targetTag: Neji_plusn_blue
     heavyThreshold: 2
     heavySound: {fileID: 0}
-    heavySprite: {fileID: 0}
+    heavyText: "\u3044\u305F\u3044"
     lightSound: {fileID: 0}
-    lightSprite: {fileID: 0}
+    lightText: "\u3042\u304A\u3044\u3077\u3089\u3059\u306E\u306D\u3058"
     displayTime: 3
   - targetTag: Neji_rokkaku_yellow
     heavyThreshold: 2
     heavySound: {fileID: 0}
-    heavySprite: {fileID: 0}
+    heavyText: "\u3044\u305F\u3044"
     lightSound: {fileID: 0}
-    lightSprite: {fileID: 0}
+    lightText: "\u304D\u3044\u308D\u3044\u304B\u304F\u304B\u304F\u306D\u3058"
     displayTime: 0
   - targetTag: Neji_rokkaku_red
     heavyThreshold: 2
     heavySound: {fileID: 0}
-    heavySprite: {fileID: 0}
+    heavyText: "\u3044\u305F\u3044"
     lightSound: {fileID: 0}
-    lightSprite: {fileID: 0}
+    lightText: "\u3042\u304B\u3044\u304B\u304F\u304B\u304F\u306D\u3058"
     displayTime: 3
   - targetTag: Neji_rokkaku_blue
     heavyThreshold: 2
     heavySound: {fileID: 0}
-    heavySprite: {fileID: 0}
+    heavyText: "\u3044\u305F\u3044"
     lightSound: {fileID: 0}
-    lightSprite: {fileID: 0}
+    lightText: "\u3042\u304A\u3044\u304B\u304F\u304B\u304F\u306D\u3058"
     displayTime: 3
   heavyImpactThreshold: 2
   heavySound: {fileID: 8300000, guid: e21f50827c0134e1f96ecaac97b5a66a, type: 3}
-  defaultHeavySprite: {fileID: 0}
+  defaultHeavyText: 
   lightSound: {fileID: 8300000, guid: a79fd384e216347c1817f7f93899a967, type: 3}
-  defaultLightSprite: {fileID: 0}
+  defaultLightText: 
   audioSource: {fileID: 643596629}
   speechBubble: {fileID: 106749381}
-  reactionImage: {fileID: 0}
+  reactionText: {fileID: 1024511328}
 --- !u!65 &643596631
 BoxCollider:
   m_ObjectHideFlags: 0

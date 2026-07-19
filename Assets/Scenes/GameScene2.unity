@@ -4127,14 +4127,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42a87d0d70cca4ef4a7cba082d0b9e06, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animator: {fileID: 0}
+  heavyAnimTrigger: HeavyHit
+  lightAnimTrigger: LightHit
+  specificTagReactions: []
   heavyImpactThreshold: 2
-  audioSource: {fileID: 204027086}
   heavySound: {fileID: 8300000, guid: e21f50827c0134e1f96ecaac97b5a66a, type: 3}
+  defaultHeavyText: 
   lightSound: {fileID: 8300000, guid: a79fd384e216347c1817f7f93899a967, type: 3}
+  defaultLightText: 
+  audioSource: {fileID: 204027086}
   speechBubble: {fileID: 106749381}
-  reactionImage: {fileID: 1114040581}
-  heavySprite: {fileID: 21300000, guid: 06bd9939c8312477d9909d2b9a63bb36, type: 3}
-  lightSprite: {fileID: 21300000, guid: 37fe9abc70cbb4bcbb3e26cd8ef06c39, type: 3}
+  reactionText: {fileID: 0}
 --- !u!65 &204027081
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -22335,83 +22339,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1640032310}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &1340341036
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: -8679921383154817045, guid: 641364a17f788467b8be92d6b38a30d3, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.4
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 641364a17f788467b8be92d6b38a30d3, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.4
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 641364a17f788467b8be92d6b38a30d3, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.4
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 641364a17f788467b8be92d6b38a30d3, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.41
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 641364a17f788467b8be92d6b38a30d3, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.25
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 641364a17f788467b8be92d6b38a30d3, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 10.19
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 641364a17f788467b8be92d6b38a30d3, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: -0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 641364a17f788467b8be92d6b38a30d3, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 641364a17f788467b8be92d6b38a30d3, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 641364a17f788467b8be92d6b38a30d3, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 641364a17f788467b8be92d6b38a30d3, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 641364a17f788467b8be92d6b38a30d3, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 270
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 641364a17f788467b8be92d6b38a30d3, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 641364a17f788467b8be92d6b38a30d3, type: 3}
-      propertyPath: m_ConstrainProportionsScale
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -2484921068739079471, guid: 641364a17f788467b8be92d6b38a30d3, type: 3}
-      propertyPath: m_ConstrainProportionsScale
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 641364a17f788467b8be92d6b38a30d3, type: 3}
-      propertyPath: m_Name
-      value: KURAGE spaceship
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 641364a17f788467b8be92d6b38a30d3, type: 3}
 --- !u!1 &1340964482
 GameObject:
   m_ObjectHideFlags: 0
@@ -35075,6 +35002,63 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3344028420659387074, guid: f960dee0271ad43a3865c9473235e8b9, type: 3}
   m_PrefabInstance: {fileID: 1646679297}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &9131353436257256372
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4924705867592121235, guid: 123fbe603f121427c9fe618150f5f841, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.41
+      objectReference: {fileID: 0}
+    - target: {fileID: 4924705867592121235, guid: 123fbe603f121427c9fe618150f5f841, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 4924705867592121235, guid: 123fbe603f121427c9fe618150f5f841, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 10.19
+      objectReference: {fileID: 0}
+    - target: {fileID: 4924705867592121235, guid: 123fbe603f121427c9fe618150f5f841, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 4924705867592121235, guid: 123fbe603f121427c9fe618150f5f841, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4924705867592121235, guid: 123fbe603f121427c9fe618150f5f841, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 4924705867592121235, guid: 123fbe603f121427c9fe618150f5f841, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4924705867592121235, guid: 123fbe603f121427c9fe618150f5f841, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4924705867592121235, guid: 123fbe603f121427c9fe618150f5f841, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 270
+      objectReference: {fileID: 0}
+    - target: {fileID: 4924705867592121235, guid: 123fbe603f121427c9fe618150f5f841, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5698110470409183529, guid: 123fbe603f121427c9fe618150f5f841, type: 3}
+      propertyPath: m_Name
+      value: KURAGE spaceship
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 123fbe603f121427c9fe618150f5f841, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -35093,7 +35077,7 @@ SceneRoots:
   - {fileID: 1732730966}
   - {fileID: 615497155}
   - {fileID: 65284394}
-  - {fileID: 1340341036}
+  - {fileID: 9131353436257256372}
   - {fileID: 652648295}
   - {fileID: 1587759274}
   - {fileID: 1640032310}
