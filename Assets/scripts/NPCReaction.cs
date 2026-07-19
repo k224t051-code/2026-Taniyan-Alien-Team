@@ -1,6 +1,6 @@
 using UnityEngine;
 using System.Collections;
-using TMPro; // TextMeshProを扱うために必要
+using UnityEngine.UI; // Imageを扱うために追加
 
 // 特定のタグに対するリアクション設定
 [System.Serializable]
@@ -14,16 +14,14 @@ public class TagReactionSetting
     public float heavyThreshold = 2.0f;
     [Tooltip("強い時の音声")]
     public AudioClip heavySound;
-    [Tooltip("強い時のテキスト（宇宙語になる平仮名）")]
-    [TextArea(1, 3)] // インスペクターで入力枠を広げる
-    public string heavyText;
+    [Tooltip("強い時の画像（吹き出しの中身）")]
+    public Sprite heavySprite;
     
     [Header("弱い衝撃用")]
     [Tooltip("弱い時の音声")]
     public AudioClip lightSound;
-    [Tooltip("弱い時のテキスト（宇宙語になる平仮名）")]
-    [TextArea(1, 3)]
-    public string lightText;
+    [Tooltip("弱い時の画像（吹き出しの中身）")]
+    public Sprite lightSprite;
 
     [Header("表示時間")]
     [Tooltip("吹き出しの表示時間")]
@@ -47,16 +45,14 @@ public class NPCReaction : MonoBehaviour
     [Header("通常の投擲物(ThrowingItem)の強弱設定")]
     [SerializeField] private float heavyImpactThreshold = 2.0f;
     [SerializeField] private AudioClip heavySound;
-    [TextArea(1, 3)]
-    [SerializeField] private string defaultHeavyText;
+    [SerializeField] private Sprite defaultHeavySprite;
     [SerializeField] private AudioClip lightSound;
-    [TextArea(1, 3)]
-    [SerializeField] private string defaultLightText;
+    [SerializeField] private Sprite defaultLightSprite;
 
     [Header("表示設定")]
     [SerializeField] private AudioSource audioSource;
     [SerializeField] private GameObject speechBubble; 
-    [SerializeField] private TextMeshProUGUI reactionText; // ImageからTMPへ変更
+    [SerializeField] private Image reactionImage; // TextMeshProUGUIからImageへ変更
 
     private void Start()
     {
@@ -82,11 +78,11 @@ public class NPCReaction : MonoBehaviour
                 
                 if (isHeavy)
                 {
-                    PlayReaction(reaction.heavySound, reaction.heavyText, reaction.displayTime, true);
+                    PlayReaction(reaction.heavySound, reaction.heavySprite, reaction.displayTime, true);
                 }
                 else
                 {
-                    PlayReaction(reaction.lightSound, reaction.lightText, reaction.displayTime, false);
+                    PlayReaction(reaction.lightSound, reaction.lightSprite, reaction.displayTime, false);
                 }
                 return; // 処理を終了
             }
@@ -99,17 +95,17 @@ public class NPCReaction : MonoBehaviour
             
             if (isHeavy)
             {
-                PlayReaction(heavySound, defaultHeavyText, 2.0f, true);
+                PlayReaction(heavySound, defaultHeavySprite, 2.0f, true);
             }
             else
             {
-                PlayReaction(lightSound, defaultLightText, 1.5f, false);
+                PlayReaction(lightSound, defaultLightSprite, 1.5f, false);
             }
         }
     }
 
-    // 音、テキスト、アニメーションをセットで再生する関数
-    private void PlayReaction(AudioClip sound, string text, float displayTime, bool isHeavy)
+    // 音、画像、アニメーションをセットで再生する関数
+    private void PlayReaction(AudioClip sound, Sprite sprite, float displayTime, bool isHeavy)
     {
         // 音を鳴らす
         if (audioSource != null && sound != null)
@@ -130,13 +126,13 @@ public class NPCReaction : MonoBehaviour
             }
         }
 
-        // 吹き出しとテキストの処理
-        if (speechBubble != null && reactionText != null && !string.IsNullOrEmpty(text))
+        // 吹き出しと画像の処理
+        if (speechBubble != null && reactionImage != null && sprite != null)
         {
             StopAllCoroutines();
 
-            // テキストの差し替え処理
-            reactionText.text = text;
+            // 画像の差し替え処理
+            reactionImage.sprite = sprite;
             speechBubble.SetActive(true);
 
             StartCoroutine(HideBubbleAfterDelay(displayTime));
