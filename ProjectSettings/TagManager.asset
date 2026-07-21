@@ -7,6 +7,36 @@ TagManager:
   - Pot
   - Area detection
   - ThrowingItem
+  - Neji_minus_red
+  - Neji_minus_blue
+  - Neji_plus_blue
+  - Neji_rokkaku_yellow
+  - Neji_rokkaku_red
+  - Neji_rokkaku_blue
+  - core_Blue
+  - core_Blue_shikaku
+  - core_Blue_triangle
+  - core_Green
+  - core_Green_shikaku
+  - core_Green_triangle
+  - core_Red
+  - core_Red_shikaku
+  - core_Red_triangle
+  - core_Yellow
+  - core_Yellow_shikaku
+  - core_Yellow_triangle
+  - fuse_1_Blue
+  - fuse_1_Green
+  - fuse_1_Red
+  - fuse_1_Yellow
+  - fuse_2_Blue_shikaku
+  - fuse_2_Green_shikaku
+  - fuse_2_Red_shikaku
+  - fuse_2_Yellow_shikaku
+  - fuse_3_Blue_triangle
+  - fuse_3_Green_triangle
+  - fuse_3_Red_triangle
+  - fuse_3_Yellow_triangle
   layers:
   - Default
   - TransparentFX
