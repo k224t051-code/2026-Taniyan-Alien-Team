@@ -2,7 +2,6 @@ using UnityEngine;
 
 /// <summary>
 /// UIボタン、またはVR用の3Dボタンから呼び出される「納品（クリア判定）」実行用スクリプト
-/// 以前の LeverCheck.cs の代わりとなるものです。
 /// </summary>
 public class SubmitButton : MonoBehaviour
 {
@@ -55,8 +54,15 @@ public class SubmitButton : MonoBehaviour
             // 一度押したら、処理が終わるまでボタンを無効化
             isSubmitted = true;
             
-            // 以前のレバーと同じように TryClear() を呼び出す
-            puzzleController.TryClear();
+            // TryClear() の結果（正解したかどうか）を受け取る
+            bool isSuccess = puzzleController.TryClear();
+
+            // 不正解（クリア条件を満たしていない）だった場合は、またボタンを押せるように元に戻す
+            if (!isSuccess)
+            {
+                isSubmitted = false;
+                Debug.Log("SubmitButton: 不正解！再度ボタンを押せるようにしました。");
+            }
         }
         else
         {

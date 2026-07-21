@@ -5,7 +5,7 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/TitleScene.unity
     guid: b2aedcadc99c145a29eea99df97cfecf
   - enabled: 1
@@ -17,12 +17,15 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Ozaki/Ozaki 1.unity
     guid: ccf8193fa8b5b4e5cb933318952a8d26
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/GameScene2.unity
     guid: 39fe8b95db4674476b559a64e2215313
   - enabled: 1
     path: Assets/Scenes/LastScene.unity
     guid: 27d939fcedc264a4fac564a66f534d4f
+  - enabled: 0
+    path: Assets/Scenes/test.unity
+    guid: 13dd4fcdb44424efbb3934bb9cb36a76
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 289c1b55c9541489481df5cc06664110, type: 3}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: a0d420a8fea714f9c8e1159085c74f7f, type: 2}
