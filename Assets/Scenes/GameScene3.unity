@@ -4473,6 +4473,22 @@ PrefabInstance:
       propertyPath: _ovrCameraRig
       value: 
       objectReference: {fileID: 1600812349}
+    - target: {fileID: 6489522149390601888, guid: 0a7d2469f24041c4284c66706f84c45e, type: 3}
+      propertyPath: m_Resource
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6489522149390601889, guid: 0a7d2469f24041c4284c66706f84c45e, type: 3}
+      propertyPath: _audioSource
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6489522149716673073, guid: 0a7d2469f24041c4284c66706f84c45e, type: 3}
+      propertyPath: m_Resource
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6489522149716673078, guid: 0a7d2469f24041c4284c66706f84c45e, type: 3}
+      propertyPath: _audioSource
+      value: 
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -12920,28 +12936,28 @@ MonoBehaviour:
     heavyThreshold: 2
     heavySound: {fileID: 8300000, guid: 0a98ff811e8b14ed8907729330325648, type: 3}
     heavySprite: {fileID: 21300000, guid: 96fec2f35cb5b4c2d9ae679f6587ce69, type: 3}
-    lightSound: {fileID: 8300000, guid: 0a98ff811e8b14ed8907729330325648, type: 3}
+    lightSound: {fileID: 8300000, guid: 0dd54898c24e947cabda9b75cbee90da, type: 3}
     lightSprite: {fileID: 21300000, guid: 96fec2f35cb5b4c2d9ae679f6587ce69, type: 3}
     displayTime: 3
   - targetTag: core_Red
     heavyThreshold: 2
-    heavySound: {fileID: 8300000, guid: 0a98ff811e8b14ed8907729330325648, type: 3}
+    heavySound: {fileID: 8300000, guid: 0dd54898c24e947cabda9b75cbee90da, type: 3}
     heavySprite: {fileID: 21300000, guid: baf75575cee5342ef897d08207c916ee, type: 3}
-    lightSound: {fileID: 8300000, guid: 0a98ff811e8b14ed8907729330325648, type: 3}
+    lightSound: {fileID: 8300000, guid: ddd81bbbb413149d2a8a87ecb442e10e, type: 3}
     lightSprite: {fileID: 21300000, guid: baf75575cee5342ef897d08207c916ee, type: 3}
     displayTime: 3
   - targetTag: core_Green
     heavyThreshold: 2
-    heavySound: {fileID: 8300000, guid: 0a98ff811e8b14ed8907729330325648, type: 3}
+    heavySound: {fileID: 8300000, guid: 0aaa83b8c514f422884de3a59c5b8ec7, type: 3}
     heavySprite: {fileID: 21300000, guid: 3f0f837bda2eb49918554718b2c21cff, type: 3}
-    lightSound: {fileID: 8300000, guid: 0a98ff811e8b14ed8907729330325648, type: 3}
+    lightSound: {fileID: 8300000, guid: ddd81bbbb413149d2a8a87ecb442e10e, type: 3}
     lightSprite: {fileID: 21300000, guid: 3f0f837bda2eb49918554718b2c21cff, type: 3}
     displayTime: 3
   - targetTag: core_Yellow
     heavyThreshold: 2
-    heavySound: {fileID: 8300000, guid: 0a98ff811e8b14ed8907729330325648, type: 3}
+    heavySound: {fileID: 8300000, guid: 0dd54898c24e947cabda9b75cbee90da, type: 3}
     heavySprite: {fileID: 21300000, guid: 1e28cc5e65c7d402987a4ce955e4ea96, type: 3}
-    lightSound: {fileID: 8300000, guid: 0a98ff811e8b14ed8907729330325648, type: 3}
+    lightSound: {fileID: 8300000, guid: 519b26e85fac74cebbbbcc42b2a1b199, type: 3}
     lightSprite: {fileID: 21300000, guid: 1e28cc5e65c7d402987a4ce955e4ea96, type: 3}
     displayTime: 3
   - targetTag: 
@@ -12960,28 +12976,28 @@ MonoBehaviour:
     displayTime: 3
   - targetTag: core_Green_shikaku
     heavyThreshold: 2
-    heavySound: {fileID: 8300000, guid: 0a98ff811e8b14ed8907729330325648, type: 3}
+    heavySound: {fileID: 8300000, guid: ce94afecd6d864e1d8fca6f6fd66e1b5, type: 3}
     heavySprite: {fileID: 21300000, guid: 50b9b31c28b58427e94ca06cfa1ffe77, type: 3}
-    lightSound: {fileID: 8300000, guid: 0a98ff811e8b14ed8907729330325648, type: 3}
+    lightSound: {fileID: 8300000, guid: ce94afecd6d864e1d8fca6f6fd66e1b5, type: 3}
     lightSprite: {fileID: 21300000, guid: 50b9b31c28b58427e94ca06cfa1ffe77, type: 3}
     displayTime: 3
   - targetTag: core_Red_shikaku
     heavyThreshold: 2
-    heavySound: {fileID: 8300000, guid: 0a98ff811e8b14ed8907729330325648, type: 3}
+    heavySound: {fileID: 8300000, guid: 519b26e85fac74cebbbbcc42b2a1b199, type: 3}
     heavySprite: {fileID: 21300000, guid: 3fe3138adc3204fe9bb73e2c5a8fd7ee, type: 3}
-    lightSound: {fileID: 8300000, guid: 0a98ff811e8b14ed8907729330325648, type: 3}
+    lightSound: {fileID: 8300000, guid: 0aaa83b8c514f422884de3a59c5b8ec7, type: 3}
     lightSprite: {fileID: 21300000, guid: 3fe3138adc3204fe9bb73e2c5a8fd7ee, type: 3}
     displayTime: 3
   - targetTag: core_Yellow_shikaku
     heavyThreshold: 2
-    heavySound: {fileID: 8300000, guid: 0a98ff811e8b14ed8907729330325648, type: 3}
+    heavySound: {fileID: 8300000, guid: 0dd54898c24e947cabda9b75cbee90da, type: 3}
     heavySprite: {fileID: 21300000, guid: 033e73a87cf784383b26a612c0d0aa2e, type: 3}
-    lightSound: {fileID: 8300000, guid: 0a98ff811e8b14ed8907729330325648, type: 3}
+    lightSound: {fileID: 8300000, guid: 0aaa83b8c514f422884de3a59c5b8ec7, type: 3}
     lightSprite: {fileID: 21300000, guid: 033e73a87cf784383b26a612c0d0aa2e, type: 3}
     displayTime: 3
   - targetTag: core_Blue_triangle
     heavyThreshold: 2
-    heavySound: {fileID: 8300000, guid: 0a98ff811e8b14ed8907729330325648, type: 3}
+    heavySound: {fileID: 8300000, guid: ddd81bbbb413149d2a8a87ecb442e10e, type: 3}
     heavySprite: {fileID: 21300000, guid: 54b2526a669e5451cba77d634ee18bfe, type: 3}
     lightSound: {fileID: 8300000, guid: 0a98ff811e8b14ed8907729330325648, type: 3}
     lightSprite: {fileID: 21300000, guid: 54b2526a669e5451cba77d634ee18bfe, type: 3}
@@ -12990,21 +13006,21 @@ MonoBehaviour:
     heavyThreshold: 2
     heavySound: {fileID: 8300000, guid: 0a98ff811e8b14ed8907729330325648, type: 3}
     heavySprite: {fileID: 21300000, guid: a7f82c9134e594eb2bd3725ddff25a60, type: 3}
-    lightSound: {fileID: 8300000, guid: 0a98ff811e8b14ed8907729330325648, type: 3}
+    lightSound: {fileID: 8300000, guid: 0dd54898c24e947cabda9b75cbee90da, type: 3}
     lightSprite: {fileID: 21300000, guid: a7f82c9134e594eb2bd3725ddff25a60, type: 3}
     displayTime: 3
   - targetTag: core_Red_triangle
     heavyThreshold: 2
-    heavySound: {fileID: 8300000, guid: 0a98ff811e8b14ed8907729330325648, type: 3}
+    heavySound: {fileID: 8300000, guid: 0aaa83b8c514f422884de3a59c5b8ec7, type: 3}
     heavySprite: {fileID: 21300000, guid: f957fa602bc6f47f18a3d95c6dab9773, type: 3}
-    lightSound: {fileID: 8300000, guid: 0a98ff811e8b14ed8907729330325648, type: 3}
+    lightSound: {fileID: 8300000, guid: 519b26e85fac74cebbbbcc42b2a1b199, type: 3}
     lightSprite: {fileID: 21300000, guid: f957fa602bc6f47f18a3d95c6dab9773, type: 3}
     displayTime: 3
   - targetTag: core_Yellow_triangle
     heavyThreshold: 2
     heavySound: {fileID: 8300000, guid: 0a98ff811e8b14ed8907729330325648, type: 3}
     heavySprite: {fileID: 21300000, guid: 9f3384fb73dd64bf0ad4f75031393293, type: 3}
-    lightSound: {fileID: 8300000, guid: 0a98ff811e8b14ed8907729330325648, type: 3}
+    lightSound: {fileID: 8300000, guid: 0dd54898c24e947cabda9b75cbee90da, type: 3}
     lightSprite: {fileID: 21300000, guid: 9f3384fb73dd64bf0ad4f75031393293, type: 3}
     displayTime: 3
   heavyImpactThreshold: 2
@@ -23113,8 +23129,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61b8fcf8632a944f8ae9303433182c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lightImpactSound: {fileID: 0}
-  heavyImpactSound: {fileID: 0}
+  lightImpactSound: {fileID: 8300000, guid: 1fe0043ba9e2a4d9283ae8d54c8523f2, type: 3}
+  heavyImpactSound: {fileID: 8300000, guid: 1fe0043ba9e2a4d9283ae8d54c8523f2, type: 3}
   minImpactSpeed: 0.5
   heavyImpactThreshold: 3
   scaleVolumeWithSpeed: 1
@@ -23134,7 +23150,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
