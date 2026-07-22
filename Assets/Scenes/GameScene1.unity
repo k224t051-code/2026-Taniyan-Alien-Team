@@ -11943,116 +11943,116 @@ MonoBehaviour:
   - targetTag: fuse_1_Blue
     heavyThreshold: 2
     heavySound: {fileID: 0}
-    heavySprite: {fileID: 0}
+    heavySprite: {fileID: 21300000, guid: 50ffb084b5f83471d8de45a6d2edf6a6, type: 3}
     lightSound: {fileID: 0}
-    lightSprite: {fileID: 0}
+    lightSprite: {fileID: 21300000, guid: 50ffb084b5f83471d8de45a6d2edf6a6, type: 3}
     displayTime: 3
   - targetTag: fuse_1_Green
     heavyThreshold: 2
     heavySound: {fileID: 0}
-    heavySprite: {fileID: 0}
+    heavySprite: {fileID: 21300000, guid: ae88cbeeee56246fab70bd99728dc927, type: 3}
     lightSound: {fileID: 0}
-    lightSprite: {fileID: 0}
+    lightSprite: {fileID: 21300000, guid: ae88cbeeee56246fab70bd99728dc927, type: 3}
     displayTime: 3
   - targetTag: fuse_1_Red
     heavyThreshold: 2
     heavySound: {fileID: 0}
-    heavySprite: {fileID: 0}
+    heavySprite: {fileID: 21300000, guid: 4c85797f025b04dbcb7fab0604965e26, type: 3}
     lightSound: {fileID: 0}
-    lightSprite: {fileID: 0}
+    lightSprite: {fileID: 21300000, guid: 4c85797f025b04dbcb7fab0604965e26, type: 3}
     displayTime: 3
   - targetTag: fuse_1_Yellow
     heavyThreshold: 2
     heavySound: {fileID: 0}
-    heavySprite: {fileID: 0}
+    heavySprite: {fileID: 21300000, guid: 8445b68d2b22646a5b63a673c5000f74, type: 3}
     lightSound: {fileID: 0}
-    lightSprite: {fileID: 0}
+    lightSprite: {fileID: 21300000, guid: 8445b68d2b22646a5b63a673c5000f74, type: 3}
     displayTime: 3
   - targetTag: fuse_2_Blue_shikaku
     heavyThreshold: 2
     heavySound: {fileID: 0}
-    heavySprite: {fileID: 0}
+    heavySprite: {fileID: 21300000, guid: bb731af2b3d484ac59f3c4e87c7da7b8, type: 3}
     lightSound: {fileID: 0}
-    lightSprite: {fileID: 0}
+    lightSprite: {fileID: 21300000, guid: bb731af2b3d484ac59f3c4e87c7da7b8, type: 3}
     displayTime: 3
   - targetTag: fuse_2_Green_shikaku
     heavyThreshold: 2
     heavySound: {fileID: 0}
-    heavySprite: {fileID: 0}
+    heavySprite: {fileID: 21300000, guid: 8a789753cb92a4b008c93357190b2800, type: 3}
     lightSound: {fileID: 0}
-    lightSprite: {fileID: 0}
+    lightSprite: {fileID: 21300000, guid: 8a789753cb92a4b008c93357190b2800, type: 3}
     displayTime: 3
   - targetTag: fuse_2_Red_shikaku
     heavyThreshold: 2
     heavySound: {fileID: 0}
-    heavySprite: {fileID: 0}
+    heavySprite: {fileID: 21300000, guid: 5c8e34188985b4e61b0209d979a30999, type: 3}
     lightSound: {fileID: 0}
-    lightSprite: {fileID: 0}
+    lightSprite: {fileID: 21300000, guid: 5c8e34188985b4e61b0209d979a30999, type: 3}
     displayTime: 3
   - targetTag: fuse_2_Yellow_shikaku
     heavyThreshold: 2
     heavySound: {fileID: 0}
-    heavySprite: {fileID: 0}
+    heavySprite: {fileID: 21300000, guid: 3f7eaef813a884eecbd4aec03645be13, type: 3}
     lightSound: {fileID: 0}
-    lightSprite: {fileID: 0}
+    lightSprite: {fileID: 21300000, guid: 3f7eaef813a884eecbd4aec03645be13, type: 3}
     displayTime: 3
   - targetTag: fuse_2_Blue_triangle
     heavyThreshold: 2
     heavySound: {fileID: 0}
-    heavySprite: {fileID: 0}
+    heavySprite: {fileID: 21300000, guid: 6f4898a3f2f274015be30921458a4776, type: 3}
     lightSound: {fileID: 0}
-    lightSprite: {fileID: 0}
+    lightSprite: {fileID: 21300000, guid: 6f4898a3f2f274015be30921458a4776, type: 3}
     displayTime: 3
   - targetTag: fuse_2_Green_triangle
     heavyThreshold: 2
     heavySound: {fileID: 0}
-    heavySprite: {fileID: 0}
+    heavySprite: {fileID: 21300000, guid: 2a24ccd0d554e4c97bc6ce67827f933d, type: 3}
     lightSound: {fileID: 0}
-    lightSprite: {fileID: 0}
+    lightSprite: {fileID: 21300000, guid: 2a24ccd0d554e4c97bc6ce67827f933d, type: 3}
     displayTime: 3
   - targetTag: fuse_2_Red_triangle
     heavyThreshold: 2
     heavySound: {fileID: 0}
-    heavySprite: {fileID: 0}
+    heavySprite: {fileID: 21300000, guid: d0722de200e244aeabd176e154989564, type: 3}
     lightSound: {fileID: 0}
-    lightSprite: {fileID: 0}
+    lightSprite: {fileID: 21300000, guid: d0722de200e244aeabd176e154989564, type: 3}
     displayTime: 3
   - targetTag: fuse_2_Yellow_triangle
     heavyThreshold: 2
     heavySound: {fileID: 0}
-    heavySprite: {fileID: 0}
+    heavySprite: {fileID: 21300000, guid: 013b8624328c848de9db1ed3be1a52b9, type: 3}
     lightSound: {fileID: 0}
-    lightSprite: {fileID: 0}
+    lightSprite: {fileID: 21300000, guid: 013b8624328c848de9db1ed3be1a52b9, type: 3}
     displayTime: 3
   - targetTag: core_Blue
     heavyThreshold: 2
     heavySound: {fileID: 0}
-    heavySprite: {fileID: 0}
+    heavySprite: {fileID: 21300000, guid: 50ffb084b5f83471d8de45a6d2edf6a6, type: 3}
     lightSound: {fileID: 0}
-    lightSprite: {fileID: 0}
+    lightSprite: {fileID: 21300000, guid: 50ffb084b5f83471d8de45a6d2edf6a6, type: 3}
     displayTime: 3
   - targetTag: core_Red
     heavyThreshold: 2
     heavySound: {fileID: 0}
-    heavySprite: {fileID: 0}
+    heavySprite: {fileID: 21300000, guid: 1a530f4a3e2ee4266b7fd11f1f03928a, type: 3}
     lightSound: {fileID: 0}
-    lightSprite: {fileID: 0}
+    lightSprite: {fileID: 21300000, guid: 1a530f4a3e2ee4266b7fd11f1f03928a, type: 3}
     displayTime: 3
   - targetTag: core_Green
     heavyThreshold: 2
     heavySound: {fileID: 0}
-    heavySprite: {fileID: 0}
+    heavySprite: {fileID: 21300000, guid: 0f6e80ad5e9604e53a524b656564a4c3, type: 3}
     lightSound: {fileID: 0}
-    lightSprite: {fileID: 0}
+    lightSprite: {fileID: 21300000, guid: 0f6e80ad5e9604e53a524b656564a4c3, type: 3}
     displayTime: 3
   - targetTag: core_Yellow
     heavyThreshold: 2
     heavySound: {fileID: 0}
-    heavySprite: {fileID: 0}
+    heavySprite: {fileID: 21300000, guid: 99b1cbc1217774e59b333620a4a487a8, type: 3}
     lightSound: {fileID: 0}
-    lightSprite: {fileID: 0}
+    lightSprite: {fileID: 21300000, guid: 99b1cbc1217774e59b333620a4a487a8, type: 3}
     displayTime: 3
-  - targetTag: core_Yellow
+  - targetTag: 
     heavyThreshold: 2
     heavySound: {fileID: 0}
     heavySprite: {fileID: 0}
@@ -12062,58 +12062,58 @@ MonoBehaviour:
   - targetTag: core_Blue_shikaku
     heavyThreshold: 2
     heavySound: {fileID: 0}
-    heavySprite: {fileID: 0}
+    heavySprite: {fileID: 21300000, guid: 0b963b99e897c43a388a9532bb886acd, type: 3}
     lightSound: {fileID: 0}
-    lightSprite: {fileID: 0}
+    lightSprite: {fileID: 21300000, guid: 0b963b99e897c43a388a9532bb886acd, type: 3}
     displayTime: 3
   - targetTag: core_Green_shikaku
     heavyThreshold: 2
     heavySound: {fileID: 0}
-    heavySprite: {fileID: 0}
+    heavySprite: {fileID: 21300000, guid: 2f64e16f386c147eba7dbf673ee1447b, type: 3}
     lightSound: {fileID: 0}
-    lightSprite: {fileID: 0}
+    lightSprite: {fileID: 21300000, guid: 2f64e16f386c147eba7dbf673ee1447b, type: 3}
     displayTime: 3
   - targetTag: core_Red_shikaku
     heavyThreshold: 2
     heavySound: {fileID: 0}
-    heavySprite: {fileID: 0}
+    heavySprite: {fileID: 21300000, guid: 89d23ab26ecf94160abeb18fb894b5ac, type: 3}
     lightSound: {fileID: 0}
-    lightSprite: {fileID: 0}
+    lightSprite: {fileID: 21300000, guid: 89d23ab26ecf94160abeb18fb894b5ac, type: 3}
     displayTime: 3
   - targetTag: core_Yellow_shikaku
     heavyThreshold: 2
     heavySound: {fileID: 0}
-    heavySprite: {fileID: 0}
+    heavySprite: {fileID: 21300000, guid: 7792506a189ca4d7296bc1fbcebb0f9b, type: 3}
     lightSound: {fileID: 0}
-    lightSprite: {fileID: 0}
+    lightSprite: {fileID: 21300000, guid: 7792506a189ca4d7296bc1fbcebb0f9b, type: 3}
     displayTime: 3
   - targetTag: core_Blue_triangle
     heavyThreshold: 2
     heavySound: {fileID: 0}
-    heavySprite: {fileID: 0}
+    heavySprite: {fileID: 21300000, guid: d66db44001a97494381caf110fe5170d, type: 3}
     lightSound: {fileID: 0}
-    lightSprite: {fileID: 0}
+    lightSprite: {fileID: 21300000, guid: d66db44001a97494381caf110fe5170d, type: 3}
     displayTime: 3
   - targetTag: core_Green_triangle
     heavyThreshold: 2
     heavySound: {fileID: 0}
-    heavySprite: {fileID: 0}
+    heavySprite: {fileID: 21300000, guid: 8cb3722fe0fc140a5af3bc7ad092cb49, type: 3}
     lightSound: {fileID: 0}
-    lightSprite: {fileID: 0}
+    lightSprite: {fileID: 21300000, guid: 8cb3722fe0fc140a5af3bc7ad092cb49, type: 3}
     displayTime: 3
   - targetTag: core_Red_triangle
     heavyThreshold: 2
     heavySound: {fileID: 0}
-    heavySprite: {fileID: 0}
+    heavySprite: {fileID: 21300000, guid: 86c3799c9d533462c871ea636886fec3, type: 3}
     lightSound: {fileID: 0}
-    lightSprite: {fileID: 0}
+    lightSprite: {fileID: 21300000, guid: 86c3799c9d533462c871ea636886fec3, type: 3}
     displayTime: 3
   - targetTag: core_Yellow_triangle
     heavyThreshold: 2
     heavySound: {fileID: 0}
-    heavySprite: {fileID: 0}
+    heavySprite: {fileID: 21300000, guid: 758b5e0b47ec44565b13c8528eb8d29b, type: 3}
     lightSound: {fileID: 0}
-    lightSprite: {fileID: 0}
+    lightSprite: {fileID: 21300000, guid: 758b5e0b47ec44565b13c8528eb8d29b, type: 3}
     displayTime: 3
   heavyImpactThreshold: 2
   heavySound: {fileID: 8300000, guid: e21f50827c0134e1f96ecaac97b5a66a, type: 3}
@@ -26996,6 +26996,37 @@ Transform:
   m_Children: []
   m_Father: {fileID: 727529093}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1630100801
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1630100802}
+  m_Layer: 0
+  m_Name: akairokousa
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &1630100802
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1630100801}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1631717923
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -41401,3 +41432,4 @@ SceneRoots:
   - {fileID: 1736883562}
   - {fileID: 252905414766961656}
   - {fileID: 1706435808}
+  - {fileID: 1630100802}
