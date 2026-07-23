@@ -22,13 +22,16 @@ public class DeliverManager : MonoBehaviour
     [Header("オプション")]
     [Tooltip("正解した時の効果音（なくても可）")]
     public AudioClip clearSound;
+    [Tooltip("不正解だった時の効果音（なくても可）")]
+    public AudioClip wrongSound;
     
     private AudioSource audioSource;
     private bool isProcessing = false;
 
     private void Start()
     {
-        if (clearSound != null)
+        // 正解音か不正解音のどちらかが設定されていれば準備する
+        if (clearSound != null || wrongSound != null)
         {
             audioSource = gameObject.AddComponent<AudioSource>();
         }
@@ -68,7 +71,12 @@ public class DeliverManager : MonoBehaviour
         else
         {
             Debug.Log("DeliverManager: 不正解です。まだ条件を満たしていません。");
-            // ※不正解時の音を鳴らす場合はここに追記できます
+            
+            // 不正解音を鳴らす
+            if (audioSource != null && wrongSound != null)
+            {
+                audioSource.PlayOneShot(wrongSound);
+            }
         }
     }
 

@@ -14955,6 +14955,7 @@ MonoBehaviour:
   fadeDuration: 1
   fadeImage: {fileID: 918873999}
   clearSound: {fileID: 8300000, guid: 3aa66ac5eafc940679c499502647c01a, type: 3}
+  wrongSound: {fileID: 8300000, guid: 1056645fe6604493fb10a09bc130d40b, type: 3}
 --- !u!114 &732268380
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -44518,3 +44519,4 @@ SceneRoots:
   - {fileID: 824479358}
   - {fileID: 1504447298}
   - {fileID: 397498798}
+  - {fileID: 526430864}
