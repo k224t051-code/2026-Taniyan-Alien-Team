@@ -1620,7 +1620,7 @@ GameObject:
   m_Component:
   - component: {fileID: 64207692}
   - component: {fileID: 64207691}
-  - component: {fileID: 64207690}
+  - component: {fileID: 64207693}
   m_Layer: 0
   m_Name: EventSystem
   m_TagString: Untagged
@@ -1628,37 +1628,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &64207690
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 64207689}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 01614664b831546d2ae94a42149d80ac, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_SendPointerHoverToParent: 1
-  m_MoveRepeatDelay: 0.5
-  m_MoveRepeatRate: 0.1
-  m_XRTrackingOrigin: {fileID: 0}
-  m_ActionsAsset: {fileID: -944628639613478452, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
-  m_PointAction: {fileID: -1654692200621890270, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
-  m_MoveAction: {fileID: -8784545083839296357, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
-  m_SubmitAction: {fileID: 392368643174621059, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
-  m_CancelAction: {fileID: 7727032971491509709, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
-  m_LeftClickAction: {fileID: 3001919216989983466, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
-  m_MiddleClickAction: {fileID: -2185481485913320682, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
-  m_RightClickAction: {fileID: -4090225696740746782, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
-  m_ScrollWheelAction: {fileID: 6240969308177333660, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
-  m_TrackedDevicePositionAction: {fileID: 6564999863303420839, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
-  m_TrackedDeviceOrientationAction: {fileID: 7970375526676320489, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
-  m_DeselectOnBackgroundClick: 1
-  m_PointerBehavior: 0
-  m_CursorLockBehavior: 0
-  m_ScrollDeltaPerTick: 6
 --- !u!114 &64207691
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1689,6 +1658,38 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1190334222}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &64207693
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 64207689}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f1a9a1d119a5944aacfb87d1ec283a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SendPointerHoverToParent: 1
+  rayTransform: {fileID: 0}
+  m_Cursor: {fileID: 0}
+  joyPadClickButton: 1
+  gazeClickKey: 32
+  performSphereCastForGazepointer: 0
+  useRightStickScroll: 1
+  rightStickDeadZone: 0.15
+  useSwipeScroll: 1
+  swipeDragThreshold: 2
+  swipeDragScale: 1
+  InvertSwipeXAxis: 0
+  angleDragThreshold: 1
+  m_SpherecastRadius: 1
+  m_HorizontalAxis: Horizontal
+  m_VerticalAxis: Vertical
+  m_SubmitButton: Submit
+  m_CancelButton: Cancel
+  m_InputActionsPerSecond: 10
+  m_AllowActivationOnMobileDevice: 1
 --- !u!1 &65284393
 GameObject:
   m_ObjectHideFlags: 0
@@ -5803,6 +5804,7 @@ GameObject:
   - component: {fileID: 285106491}
   - component: {fileID: 285106490}
   - component: {fileID: 285106489}
+  - component: {fileID: 285106492}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -5874,7 +5876,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 563701844}
+      - m_Target: {fileID: 285106492}
         m_TargetAssemblyTypeName: DeliverManager, Assembly-CSharp
         m_MethodName: OnClickSubmit
         m_Mode: 1
@@ -5883,7 +5885,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: onclick
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &285106490
@@ -5924,6 +5926,24 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 285106487}
   m_CullTransparentMesh: 1
+--- !u!114 &285106492
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 285106487}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93d5b1f8f6d5743639433bfcb9792abb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  area: {fileID: 1458519721}
+  correctAnswers: []
+  nextSceneName: ResultScene
+  fadeDuration: 1
+  fadeImage: {fileID: 0}
+  clearSound: {fileID: 0}
 --- !u!1001 &286285747
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12770,51 +12790,51 @@ MonoBehaviour:
   specificTagReactions:
   - targetTag: Neji_minus_blue
     heavyThreshold: 2
-    heavySound: {fileID: 0}
+    heavySound: {fileID: 8300000, guid: 519b26e85fac74cebbbbcc42b2a1b199, type: 3}
     heavySprite: {fileID: 21300000, guid: f92f30adf815d45d59b95842b5fdfc44, type: 3}
-    lightSound: {fileID: 0}
+    lightSound: {fileID: 8300000, guid: ddd81bbbb413149d2a8a87ecb442e10e, type: 3}
     lightSprite: {fileID: 21300000, guid: 5f7fd4bbeaf254f0a92ba86535e3d758, type: 3}
     displayTime: 3
   - targetTag: Neji_minus _red
     heavyThreshold: 2
-    heavySound: {fileID: 0}
+    heavySound: {fileID: 8300000, guid: ddd81bbbb413149d2a8a87ecb442e10e, type: 3}
     heavySprite: {fileID: 21300000, guid: f92f30adf815d45d59b95842b5fdfc44, type: 3}
-    lightSound: {fileID: 0}
+    lightSound: {fileID: 8300000, guid: 0dd54898c24e947cabda9b75cbee90da, type: 3}
     lightSprite: {fileID: 21300000, guid: 6b20320a4297e42c49f7d2cda5ace33e, type: 3}
     displayTime: 3
   - targetTag: Neji_plusn_blue
     heavyThreshold: 2
-    heavySound: {fileID: 0}
+    heavySound: {fileID: 8300000, guid: ce94afecd6d864e1d8fca6f6fd66e1b5, type: 3}
     heavySprite: {fileID: 21300000, guid: f92f30adf815d45d59b95842b5fdfc44, type: 3}
-    lightSound: {fileID: 0}
+    lightSound: {fileID: 8300000, guid: 519b26e85fac74cebbbbcc42b2a1b199, type: 3}
     lightSprite: {fileID: 21300000, guid: 082bec9720dd7494dbc61989b9ff974b, type: 3}
     displayTime: 3
   - targetTag: Neji_rokkaku_yellow
     heavyThreshold: 2
-    heavySound: {fileID: 0}
+    heavySound: {fileID: 8300000, guid: 519b26e85fac74cebbbbcc42b2a1b199, type: 3}
     heavySprite: {fileID: 21300000, guid: f92f30adf815d45d59b95842b5fdfc44, type: 3}
-    lightSound: {fileID: 0}
+    lightSound: {fileID: 8300000, guid: ddd81bbbb413149d2a8a87ecb442e10e, type: 3}
     lightSprite: {fileID: 21300000, guid: 5a1ec76696e0146ffb5e37db6bd02f28, type: 3}
     displayTime: 3
   - targetTag: Neji_rokkaku_red
     heavyThreshold: 2
-    heavySound: {fileID: 0}
+    heavySound: {fileID: 8300000, guid: 0dd54898c24e947cabda9b75cbee90da, type: 3}
     heavySprite: {fileID: 21300000, guid: f92f30adf815d45d59b95842b5fdfc44, type: 3}
-    lightSound: {fileID: 0}
+    lightSound: {fileID: 8300000, guid: ce94afecd6d864e1d8fca6f6fd66e1b5, type: 3}
     lightSprite: {fileID: 21300000, guid: d081fea3626434606b25d5f6f24c4cc0, type: 3}
     displayTime: 3
   - targetTag: Neji_rokkaku_blue
     heavyThreshold: 2
-    heavySound: {fileID: 0}
+    heavySound: {fileID: 8300000, guid: 519b26e85fac74cebbbbcc42b2a1b199, type: 3}
     heavySprite: {fileID: 21300000, guid: f92f30adf815d45d59b95842b5fdfc44, type: 3}
-    lightSound: {fileID: 0}
+    lightSound: {fileID: 8300000, guid: 0aaa83b8c514f422884de3a59c5b8ec7, type: 3}
     lightSprite: {fileID: 21300000, guid: f87ebf2aab5a4462498cf16924359e15, type: 3}
     displayTime: 3
   - targetTag: Neji_rokkaku_blue
     heavyThreshold: 2
-    heavySound: {fileID: 0}
+    heavySound: {fileID: 8300000, guid: 0dd54898c24e947cabda9b75cbee90da, type: 3}
     heavySprite: {fileID: 21300000, guid: f92f30adf815d45d59b95842b5fdfc44, type: 3}
-    lightSound: {fileID: 0}
+    lightSound: {fileID: 8300000, guid: 0dd54898c24e947cabda9b75cbee90da, type: 3}
     lightSprite: {fileID: 21300000, guid: 6b20320a4297e42c49f7d2cda5ace33e, type: 3}
     displayTime: 3
   - targetTag: fuse_1_Blue
@@ -44146,7 +44166,7 @@ Transform:
   m_GameObject: {fileID: 3154786177911626017}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0.68241143, z: -0, w: 0.73096836}
-  m_LocalPosition: {x: 2.116, y: 0.83960617, z: -2.312}
+  m_LocalPosition: {x: 2.215, y: 0.83960617, z: -1.349}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 1
   m_Children:
