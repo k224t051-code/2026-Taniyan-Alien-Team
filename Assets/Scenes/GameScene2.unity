@@ -1159,6 +1159,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 252905414766961656}
     m_Modifications:
+    - target: {fileID: 499319063389662302, guid: 534abcb3128b64d5899728bc40961873, type: 3}
+      propertyPath: heavyImpactSound
+      value: 
+      objectReference: {fileID: 8300000, guid: d2f098548e0d344b086f9cf89f083ded, type: 3}
+    - target: {fileID: 499319063389662302, guid: 534abcb3128b64d5899728bc40961873, type: 3}
+      propertyPath: lightImpactSound
+      value: 
+      objectReference: {fileID: 8300000, guid: d2f098548e0d344b086f9cf89f083ded, type: 3}
     - target: {fileID: 711969778143627100, guid: 534abcb3128b64d5899728bc40961873, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.886
@@ -1167,6 +1175,14 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: -5.352
       objectReference: {fileID: 0}
+    - target: {fileID: 1168083484376295317, guid: 534abcb3128b64d5899728bc40961873, type: 3}
+      propertyPath: heavyImpactSound
+      value: 
+      objectReference: {fileID: 8300000, guid: d2f098548e0d344b086f9cf89f083ded, type: 3}
+    - target: {fileID: 1168083484376295317, guid: 534abcb3128b64d5899728bc40961873, type: 3}
+      propertyPath: lightImpactSound
+      value: 
+      objectReference: {fileID: 8300000, guid: d2f098548e0d344b086f9cf89f083ded, type: 3}
     - target: {fileID: 1761189899711158745, guid: 534abcb3128b64d5899728bc40961873, type: 3}
       propertyPath: m_Name
       value: fuse
@@ -1179,6 +1195,30 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: -1.791
       objectReference: {fileID: 0}
+    - target: {fileID: 2305773147490003164, guid: 534abcb3128b64d5899728bc40961873, type: 3}
+      propertyPath: heavyImpactSound
+      value: 
+      objectReference: {fileID: 8300000, guid: d2f098548e0d344b086f9cf89f083ded, type: 3}
+    - target: {fileID: 2305773147490003164, guid: 534abcb3128b64d5899728bc40961873, type: 3}
+      propertyPath: lightImpactSound
+      value: 
+      objectReference: {fileID: 8300000, guid: d2f098548e0d344b086f9cf89f083ded, type: 3}
+    - target: {fileID: 2489005124660581659, guid: 534abcb3128b64d5899728bc40961873, type: 3}
+      propertyPath: heavyImpactSound
+      value: 
+      objectReference: {fileID: 8300000, guid: d2f098548e0d344b086f9cf89f083ded, type: 3}
+    - target: {fileID: 2489005124660581659, guid: 534abcb3128b64d5899728bc40961873, type: 3}
+      propertyPath: lightImpactSound
+      value: 
+      objectReference: {fileID: 8300000, guid: d2f098548e0d344b086f9cf89f083ded, type: 3}
+    - target: {fileID: 3467175987540661146, guid: 534abcb3128b64d5899728bc40961873, type: 3}
+      propertyPath: heavyImpactSound
+      value: 
+      objectReference: {fileID: 8300000, guid: d2f098548e0d344b086f9cf89f083ded, type: 3}
+    - target: {fileID: 3467175987540661146, guid: 534abcb3128b64d5899728bc40961873, type: 3}
+      propertyPath: lightImpactSound
+      value: 
+      objectReference: {fileID: 8300000, guid: d2f098548e0d344b086f9cf89f083ded, type: 3}
     - target: {fileID: 3714474797642515382, guid: 534abcb3128b64d5899728bc40961873, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.26
@@ -1203,6 +1243,30 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: -2.694
       objectReference: {fileID: 0}
+    - target: {fileID: 4618222727006552450, guid: 534abcb3128b64d5899728bc40961873, type: 3}
+      propertyPath: heavyImpactSound
+      value: 
+      objectReference: {fileID: 8300000, guid: d2f098548e0d344b086f9cf89f083ded, type: 3}
+    - target: {fileID: 4618222727006552450, guid: 534abcb3128b64d5899728bc40961873, type: 3}
+      propertyPath: lightImpactSound
+      value: 
+      objectReference: {fileID: 8300000, guid: d2f098548e0d344b086f9cf89f083ded, type: 3}
+    - target: {fileID: 4687346366282025671, guid: 534abcb3128b64d5899728bc40961873, type: 3}
+      propertyPath: heavyImpactSound
+      value: 
+      objectReference: {fileID: 8300000, guid: d2f098548e0d344b086f9cf89f083ded, type: 3}
+    - target: {fileID: 4687346366282025671, guid: 534abcb3128b64d5899728bc40961873, type: 3}
+      propertyPath: lightImpactSound
+      value: 
+      objectReference: {fileID: 8300000, guid: d2f098548e0d344b086f9cf89f083ded, type: 3}
+    - target: {fileID: 4820580245917274349, guid: 534abcb3128b64d5899728bc40961873, type: 3}
+      propertyPath: heavyImpactSound
+      value: 
+      objectReference: {fileID: 8300000, guid: d2f098548e0d344b086f9cf89f083ded, type: 3}
+    - target: {fileID: 4820580245917274349, guid: 534abcb3128b64d5899728bc40961873, type: 3}
+      propertyPath: lightImpactSound
+      value: 
+      objectReference: {fileID: 8300000, guid: d2f098548e0d344b086f9cf89f083ded, type: 3}
     - target: {fileID: 5470279973066144344, guid: 534abcb3128b64d5899728bc40961873, type: 3}
       propertyPath: m_LocalPosition.x
       value: -2.416
@@ -1243,6 +1307,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5792706913896597740, guid: 534abcb3128b64d5899728bc40961873, type: 3}
+      propertyPath: heavyImpactSound
+      value: 
+      objectReference: {fileID: 8300000, guid: d2f098548e0d344b086f9cf89f083ded, type: 3}
+    - target: {fileID: 5792706913896597740, guid: 534abcb3128b64d5899728bc40961873, type: 3}
+      propertyPath: lightImpactSound
+      value: 
+      objectReference: {fileID: 8300000, guid: d2f098548e0d344b086f9cf89f083ded, type: 3}
+    - target: {fileID: 5898950712888322547, guid: 534abcb3128b64d5899728bc40961873, type: 3}
+      propertyPath: heavyImpactSound
+      value: 
+      objectReference: {fileID: 8300000, guid: d2f098548e0d344b086f9cf89f083ded, type: 3}
+    - target: {fileID: 5898950712888322547, guid: 534abcb3128b64d5899728bc40961873, type: 3}
+      propertyPath: lightImpactSound
+      value: 
+      objectReference: {fileID: 8300000, guid: d2f098548e0d344b086f9cf89f083ded, type: 3}
     - target: {fileID: 7596665124518928474, guid: 534abcb3128b64d5899728bc40961873, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2.652
@@ -1259,6 +1339,22 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: -4.158
       objectReference: {fileID: 0}
+    - target: {fileID: 8168530987453242813, guid: 534abcb3128b64d5899728bc40961873, type: 3}
+      propertyPath: heavyImpactSound
+      value: 
+      objectReference: {fileID: 8300000, guid: d2f098548e0d344b086f9cf89f083ded, type: 3}
+    - target: {fileID: 8168530987453242813, guid: 534abcb3128b64d5899728bc40961873, type: 3}
+      propertyPath: lightImpactSound
+      value: 
+      objectReference: {fileID: 8300000, guid: d2f098548e0d344b086f9cf89f083ded, type: 3}
+    - target: {fileID: 8169554596066912545, guid: 534abcb3128b64d5899728bc40961873, type: 3}
+      propertyPath: heavyImpactSound
+      value: 
+      objectReference: {fileID: 8300000, guid: d2f098548e0d344b086f9cf89f083ded, type: 3}
+    - target: {fileID: 8169554596066912545, guid: 534abcb3128b64d5899728bc40961873, type: 3}
+      propertyPath: lightImpactSound
+      value: 
+      objectReference: {fileID: 8300000, guid: d2f098548e0d344b086f9cf89f083ded, type: 3}
     - target: {fileID: 8253450825876164199, guid: 534abcb3128b64d5899728bc40961873, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.838
