@@ -6090,6 +6090,7 @@ MonoBehaviour:
   fadeDuration: 1
   fadeImage: {fileID: 1036368077}
   clearSound: {fileID: 8300000, guid: 3aa66ac5eafc940679c499502647c01a, type: 3}
+  wrongSound: {fileID: 8300000, guid: 030b194af52d0480e9042c9a758abf46, type: 3}
 --- !u!1001 &286285747
 PrefabInstance:
   m_ObjectHideFlags: 0
