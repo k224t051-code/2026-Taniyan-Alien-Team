@@ -2484,8 +2484,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61b8fcf8632a944f8ae9303433182c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lightImpactSound: {fileID: 0}
-  heavyImpactSound: {fileID: 0}
+  lightImpactSound: {fileID: 8300000, guid: d2f098548e0d344b086f9cf89f083ded, type: 3}
+  heavyImpactSound: {fileID: 8300000, guid: d2f098548e0d344b086f9cf89f083ded, type: 3}
   minImpactSpeed: 0.5
   heavyImpactThreshold: 3
   scaleVolumeWithSpeed: 1
@@ -3194,8 +3194,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61b8fcf8632a944f8ae9303433182c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lightImpactSound: {fileID: 0}
-  heavyImpactSound: {fileID: 0}
+  lightImpactSound: {fileID: 8300000, guid: d2f098548e0d344b086f9cf89f083ded, type: 3}
+  heavyImpactSound: {fileID: 8300000, guid: d2f098548e0d344b086f9cf89f083ded, type: 3}
   minImpactSpeed: 0.5
   heavyImpactThreshold: 3
   scaleVolumeWithSpeed: 1
@@ -9346,8 +9346,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61b8fcf8632a944f8ae9303433182c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lightImpactSound: {fileID: 0}
-  heavyImpactSound: {fileID: 0}
+  lightImpactSound: {fileID: 8300000, guid: d2f098548e0d344b086f9cf89f083ded, type: 3}
+  heavyImpactSound: {fileID: 8300000, guid: d2f098548e0d344b086f9cf89f083ded, type: 3}
   minImpactSpeed: 0.5
   heavyImpactThreshold: 3
   scaleVolumeWithSpeed: 1
@@ -14234,8 +14234,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61b8fcf8632a944f8ae9303433182c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lightImpactSound: {fileID: 0}
-  heavyImpactSound: {fileID: 0}
+  lightImpactSound: {fileID: 8300000, guid: d2f098548e0d344b086f9cf89f083ded, type: 3}
+  heavyImpactSound: {fileID: 8300000, guid: d2f098548e0d344b086f9cf89f083ded, type: 3}
   minImpactSpeed: 0.5
   heavyImpactThreshold: 3
   scaleVolumeWithSpeed: 1
@@ -19874,8 +19874,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61b8fcf8632a944f8ae9303433182c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lightImpactSound: {fileID: 0}
-  heavyImpactSound: {fileID: 0}
+  lightImpactSound: {fileID: 8300000, guid: d2f098548e0d344b086f9cf89f083ded, type: 3}
+  heavyImpactSound: {fileID: 8300000, guid: d2f098548e0d344b086f9cf89f083ded, type: 3}
   minImpactSpeed: 0.5
   heavyImpactThreshold: 3
   scaleVolumeWithSpeed: 1
@@ -23129,8 +23129,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61b8fcf8632a944f8ae9303433182c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lightImpactSound: {fileID: 8300000, guid: 1fe0043ba9e2a4d9283ae8d54c8523f2, type: 3}
-  heavyImpactSound: {fileID: 8300000, guid: 1fe0043ba9e2a4d9283ae8d54c8523f2, type: 3}
+  lightImpactSound: {fileID: 8300000, guid: d2f098548e0d344b086f9cf89f083ded, type: 3}
+  heavyImpactSound: {fileID: 8300000, guid: d2f098548e0d344b086f9cf89f083ded, type: 3}
   minImpactSpeed: 0.5
   heavyImpactThreshold: 3
   scaleVolumeWithSpeed: 1
@@ -27302,8 +27302,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61b8fcf8632a944f8ae9303433182c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lightImpactSound: {fileID: 0}
-  heavyImpactSound: {fileID: 0}
+  lightImpactSound: {fileID: 8300000, guid: d2f098548e0d344b086f9cf89f083ded, type: 3}
+  heavyImpactSound: {fileID: 8300000, guid: d2f098548e0d344b086f9cf89f083ded, type: 3}
   minImpactSpeed: 0.5
   heavyImpactThreshold: 3
   scaleVolumeWithSpeed: 1
@@ -29399,8 +29399,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61b8fcf8632a944f8ae9303433182c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lightImpactSound: {fileID: 0}
-  heavyImpactSound: {fileID: 0}
+  lightImpactSound: {fileID: 8300000, guid: d2f098548e0d344b086f9cf89f083ded, type: 3}
+  heavyImpactSound: {fileID: 8300000, guid: d2f098548e0d344b086f9cf89f083ded, type: 3}
   minImpactSpeed: 0.5
   heavyImpactThreshold: 3
   scaleVolumeWithSpeed: 1
@@ -36692,8 +36692,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61b8fcf8632a944f8ae9303433182c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lightImpactSound: {fileID: 0}
-  heavyImpactSound: {fileID: 0}
+  lightImpactSound: {fileID: 8300000, guid: d2f098548e0d344b086f9cf89f083ded, type: 3}
+  heavyImpactSound: {fileID: 8300000, guid: d2f098548e0d344b086f9cf89f083ded, type: 3}
   minImpactSpeed: 0.5
   heavyImpactThreshold: 3
   scaleVolumeWithSpeed: 1
@@ -37774,8 +37774,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61b8fcf8632a944f8ae9303433182c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lightImpactSound: {fileID: 0}
-  heavyImpactSound: {fileID: 0}
+  lightImpactSound: {fileID: 8300000, guid: d2f098548e0d344b086f9cf89f083ded, type: 3}
+  heavyImpactSound: {fileID: 8300000, guid: d2f098548e0d344b086f9cf89f083ded, type: 3}
   minImpactSpeed: 0.5
   heavyImpactThreshold: 3
   scaleVolumeWithSpeed: 1
@@ -38144,8 +38144,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61b8fcf8632a944f8ae9303433182c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lightImpactSound: {fileID: 0}
-  heavyImpactSound: {fileID: 0}
+  lightImpactSound: {fileID: 8300000, guid: d2f098548e0d344b086f9cf89f083ded, type: 3}
+  heavyImpactSound: {fileID: 8300000, guid: d2f098548e0d344b086f9cf89f083ded, type: 3}
   minImpactSpeed: 0.5
   heavyImpactThreshold: 3
   scaleVolumeWithSpeed: 1
@@ -40665,8 +40665,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61b8fcf8632a944f8ae9303433182c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lightImpactSound: {fileID: 0}
-  heavyImpactSound: {fileID: 0}
+  lightImpactSound: {fileID: 8300000, guid: d2f098548e0d344b086f9cf89f083ded, type: 3}
+  heavyImpactSound: {fileID: 8300000, guid: d2f098548e0d344b086f9cf89f083ded, type: 3}
   minImpactSpeed: 0.5
   heavyImpactThreshold: 3
   scaleVolumeWithSpeed: 1
